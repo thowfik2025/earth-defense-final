@@ -47,16 +47,34 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        space: {
+          dark: "hsl(var(--space-dark))",
+          darker: "hsl(var(--space-darker))",
         },
+        cosmic: {
+          blue: "hsl(var(--cosmic-blue))",
+          purple: "hsl(var(--cosmic-purple))",
+        },
+        nebula: {
+          pink: "hsl(var(--nebula-pink))",
+        },
+        warning: {
+          orange: "hsl(var(--warning-orange))",
+        },
+        danger: {
+          red: "hsl(var(--danger-red))",
+        },
+      },
+      backgroundImage: {
+        'gradient-space': 'var(--gradient-space)',
+        'gradient-cosmic': 'var(--gradient-cosmic)',
+        'gradient-nebula': 'var(--gradient-nebula)',
+        'gradient-alert': 'var(--gradient-alert)',
+      },
+      boxShadow: {
+        'glow-blue': 'var(--glow-blue)',
+        'glow-purple': 'var(--glow-purple)',
+        'glow-orange': 'var(--glow-orange)',
       },
       borderRadius: {
         lg: "var(--radius)",
