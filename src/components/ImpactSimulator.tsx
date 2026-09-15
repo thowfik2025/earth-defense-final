@@ -6,12 +6,20 @@ import { Button } from "@/components/ui/button";
 import { Calculator, Zap, Mountain, Waves } from "lucide-react";
 import { toast } from "sonner";
 
+interface ImpactResults {
+  energy: string;
+  craterDiameter: string;
+  magnitude: string;
+  tsunamiHeight: string;
+  mass: string;
+}
+
 export const ImpactSimulator = () => {
   const [diameter, setDiameter] = useState([0.5]); // km
   const [velocity, setVelocity] = useState([20]); // km/s
   const [angle, setAngle] = useState([45]); // degrees
-  const [results, setResults] = useState<any>(null);
-
+  const [results, setResults] = useState<ImpactResults | null>(null);
+  
   const calculateImpact = () => {
     // Simplified impact calculations
     const d = diameter[0];
