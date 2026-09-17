@@ -20,6 +20,12 @@ pipeline {
                 bat 'npm run build'
             }
         }
+
+        stage('Deploy Test') {
+            steps {
+                bat 'echo Jenkins deployment test > C:\\inetpub\\wwwroot\\earth-defense\\jenkins-test.txt'
+            }
+        }
     }
 
     post {
