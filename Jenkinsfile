@@ -23,7 +23,7 @@ pipeline {
 
         stage('Deploy Test') {
             steps {
-                bat 'echo Jenkins deployment test > C:\\inetpub\\wwwroot\\earth-defense\\jenkins-test.txt'
+                bat 'xcopy /E /I /Y /Q dist C:\\inetpub\\wwwroot\\earth-defense'
             }
         }
     }
